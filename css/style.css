@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #e8e8e8; /* Soft grey background */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.header {
+    background-image: url("../images/img123.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensure background image covers the section */
+}
+
+#header {
+    background: #2c3e50; /* Darker blue for header */
+}
+
+#header h1 {
+    color: #f39c12; /* Bright orange-yellow */
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif; /* Bolder font for the heading */
+    text-transform: uppercase;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0; /* Added padding for better spacing */
+}
+
+#header ul li {
+    list-style-type: none;
+    margin: 0 15px;
+    padding: 6px 12px;
+}
+
+#header ul li a {
+    color: #ecf0f1; /* Light grey for link text */
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.4s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+#header ul li a:hover {
+    color: #f1c40f; /* Golden yellow on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.register {
+    margin: 40px 0;
+    color: #e67e22; /* Vivid orange */
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.register1 {
+    margin: 40px 0;
+    position: relative;
+    text-align: center;
+}
+
+.register1::after {
+    content: "";
+    width: 350px;
+    height: 4px;
+    background: #f1c40f; /* Golden yellow line */
+    position: absolute;
+    top: 90px;
+    right: 50%; 
+    transform: translateX(50%); /* Center the line */
+}
+
+.car {
+    width: 120px; /* Slightly larger */
+    height: 120px;
+    border-radius: 8px; /* Added rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#car {
+    text-transform: capitalize;
+    background: rgba(44, 62, 80, 0.7); /* Slightly darker transparent background */
+    position: absolute;
+    padding: 30px;
+    margin: 120px 0 0 50px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+#car h2 {
+    color: #f39c12; /* Bright orange-yellow */
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#car h3 {
+    color: #ecf0f1; /* Soft white */
+    font-size: 18px;
+}
+
+#car h3 span {
+    color: #f1c40f; /* Golden yellow */
+}

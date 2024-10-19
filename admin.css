@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/newimg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.text {
+    text-align: center;
+}
+
+body h1 {
+    color: #1abc9c; /* Changed to a soft teal */
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif; /* Added modern font */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.login-form, .admin-form {
+    margin-top: 120px;
+}
+
+.login-form h1, .admin-form h1 {
+    font-size: 34px;
+    color: #ecf0f1; /* Light grey for contrast */
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.login-form label, .admin-form label {
+    font-size: 18px;
+    color: #ecf0f1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    height: 28px;
+    width: 20%;
+    font-size: 16px;
+    padding: 0 8px;
+    outline: none;
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 2px solid #2ecc71; /* Green border */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db; /* Blue border when focused */
+}
+
+form .submit {
+    background: #e74c3c; /* Bright red button */
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    height: 45px;
+    width: 12%;
+    margin-top: 20px;
+    border-radius: 5px; /* Rounded button */
+    transition: all 0.4s ease;
+}
+
+form .submit:hover {
+    background: #c0392b; /* Darker red on hover */
+    cursor: pointer;
+}
+
+#header {
+    background: #2c3e50; /* Darker navy blue */
+}
+
+#header h1 {
+    color: #f1c40f; /* Bright yellow text */
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#header ul li {
+    list-style-type: none;
+    margin: 0 15px;
+    padding: 6px 12px;
+}
+
+#header ul li a {
+    color: #ecf0f1;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#header ul li a:hover {
+    color: #f39c12; /* Golden yellow on hover */
+}
+
+/* Admin Form Specific Styles */
+.admin-form {
+    background: #1abc9c; /* Soft teal background for admin form */
+    padding: 40px;
+    border-radius: 10px; /* More rounded form */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
+    width: 400px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.admin-form h1 {
+    font-size: 30px;
+    color: #ffffff; /* White for contrast */
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.admin-form label {
+    font-size: 18px;
+    color: #ffffff; /* Light text color */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #ffffff; /* White border */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.admin-form input[type="text"]:focus,
+.admin-form input[type="password"]:focus {
+    border-color: #3498db; /* Blue border on focus */
+}
+
+.admin-form .submit {
+    background: #e74c3c; /* Bright red submit button */
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+.admin-form .submit:hover {
+    background: #c0392b; /* Darker red on hover */
+}
